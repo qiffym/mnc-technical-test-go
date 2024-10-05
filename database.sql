@@ -6,3 +6,10 @@ create table users (
     role varchar(100)
 );
 
+create table transactions (
+    id serial not null primary key,
+    title varchar(100),
+    amount int,
+    description varchar(255),
+    date timestamp default NOW()
+);
